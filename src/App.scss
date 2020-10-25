@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700|Source+Sans+Pro:400,600,700&display=swap');
 
 body {
-    background: #ddeefc;
+    background: #6C798C;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
 }
@@ -31,20 +31,20 @@ body {
     }
 
     &__inner {
-        background: #fff;
+        background: #CCA74D;
         // box-shadow: 3px 13px 30px 0px rgba(21, 34, 67, 0.2);
         box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
         border-radius: 10px;
         padding: 35px;
-        padding-top: 180px;
+        padding-top: 145px;
 
         @media screen and (max-width: 480px) {
             padding: 25px;
-            padding-top: 165px;
+            padding-top: 145px;
         }
         @media screen and (max-width: 360px) {
             padding: 15px;
-            padding-top: 165px;
+            padding-top: 145px;
         }
     }
 
@@ -94,6 +94,7 @@ body {
 
             &:last-child {
                 margin-right: 0;
+                
             }
         }
     }
@@ -146,7 +147,7 @@ body {
         transition: all 0.3s ease-in-out;
         font-size: 18px;
         padding: 5px 15px;
-        background: none;
+        background: #fff;
         color: #1a3b5d;
         font-family: 'Source Sans Pro', sans-serif;
 

@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
+import PayNow from '../payNow';
 
 const currentYear = new Date().getFullYear();
 const monthsArr = Array.from({ length: 12 }, (x, i) => {
@@ -83,9 +84,12 @@ export default function CForm({
     // };
 
     return (
-        <div className="card-form">
+        <div className="card-form" id="form">
             <div className="card-list">{children}</div>
             <div className="card-form__inner">
+                <div className="card-input">
+                    <PayNow />
+                </div>
                 <div className="card-input">
                     <label htmlFor="cardNumber" className="card-input__label">
                         Card Number
@@ -94,7 +98,7 @@ export default function CForm({
                         type="tel"
                         name="cardNumber"
                         className="card-input__input"
-                        autoComplete="off"
+                        autoComplete="on"
                         onChange={onCardNumberChange}
                         maxLength="19"
                         ref={cardNumberRef}
@@ -111,7 +115,7 @@ export default function CForm({
                     <input
                         type="text"
                         className="card-input__input"
-                        autoComplete="off"
+                        autoComplete="on"
                         name="cardHolder"
                         onChange={handleFormChange}
                         ref={cardHolderRef}
@@ -180,7 +184,7 @@ export default function CForm({
                                 type="tel"
                                 className="card-input__input"
                                 maxLength="4"
-                                autoComplete="off"
+                                autoComplete="on"
                                 name="cardCvv"
                                 onChange={handleFormChange}
                                 onFocus={onCvvFocus}
@@ -190,6 +194,7 @@ export default function CForm({
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     );

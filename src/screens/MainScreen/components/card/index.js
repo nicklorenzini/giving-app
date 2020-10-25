@@ -17,7 +17,7 @@ const CARDS = {
 };
 
 const cardBackgroundName = () => {
-    let random = Math.floor(Math.random() * 25 + 1);
+    let random = Math.floor(Math.random() * 3 + 1);
     return `${random}.jpeg`;
 };
 
