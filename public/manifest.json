@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Tithe and Giving App",
+  "name": "Modern app for churches to accept donations and contributions",
   "icons": [
     {
       "src": "favicon.ico",
